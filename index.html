@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHINESE CHESS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="mask"></div>
+    <div class="reset-box">
+        <h1 class="winner-box"></h1>
+        <button class="reset-button">RESET GAME</button>
+    </div>
+   
+
+
+    <div class="container">
+        <div id="board">
+            <img src="images/board.png" id="board-img">
+            <div id="grid-board">
+                
+                <div class=piece id="black-guard1"><img src="./images/black-guard.png"   alt=""></div>
+                <div class=piece id="black-king"><img src="./images/black-king.png"   alt=""></div>
+                <div class=piece id="black-guard2"><img src="./images/black-guard.png"   alt=""></div>
+                <div class=piece id="black-bishop1"><img src="./images/black-bishop.png"   alt=""></div>
+                <div class=piece id="black-bishop2"><img src="./images/black-bishop.png"   alt=""></div>
+                <div class=piece id="black-rook1"><img src="./images/black-rook.png"   alt=""></div>
+                <div class=piece id="black-rook2"><img src="./images/black-rook.png"   alt=""></div>
+                <div class=piece id="black-canon1"><img src="./images/black-canon.png"   alt=""></div>
+                <div class=piece id="black-canon2"><img src="./images/black-canon.png"   alt=""></div>
+                <div class=piece id="black-knight1"><img src="./images/black-knight.png"   alt=""></div>
+                <div class=piece id="black-knight2"><img src="./images/black-knight.png"   alt=""></div>
+                <div class=piece id="black-pawn1"  ><img src="./images/black-pawn.png"  alt=""></div>
+                <div class=piece id="black-pawn2" ><img src="./images/black-pawn.png"  alt=""></div>
+                <div class=piece id="black-pawn3" ><img src="./images/black-pawn.png"  alt=""></div>
+                <div class=piece id="black-pawn4"><img src="./images/black-pawn.png"   alt=""></div>
+                <div class=piece id="black-pawn5"><img src="./images/black-pawn.png"   alt=""></div>
+                <div class=piece id="red-king" ><img src="./images/red-king.png"  alt=""></div>
+                <div class=piece id="red-guard1" ><img src="./images/red-guard.png"  alt=""></div>
+                <div class=piece id="red-guard2" ><img src="./images/red-guard.png"  alt=""></div>
+                <div class=piece id="red-bishop1" ><img src="./images/red-bishop.png"  alt=""></div>
+                <div class=piece id="red-bishop2" ><img src="./images/red-bishop.png"  alt=""></div>
+                <div class=piece id="red-rook1"><img src="./images/red-rook.png"   alt=""></div>
+                <div class=piece id="red-rook2"><img src="./images/red-rook.png"   alt=""></div>
+                <div class=piece id="red-canon1" ><img src="./images/red-canon.png"  alt=""></div>
+                <div class=piece id="red-canon2" ><img src="./images/red-canon.png"  alt=""></div>
+                <div class=piece id="red-knight1" ><img src="./images/red-knight.png"  alt=""></div>
+                <div class=piece id="red-knight2" ><img src="./images/red-knight.png"  alt=""></div>
+                <div class=piece id="red-pawn1"><img src="./images/red-pawn.png"  alt=""></div>
+                <div class=piece id="red-pawn2"><img src="./images/red-pawn.png"  alt=""></div>
+                <div class=piece id="red-pawn3"><img src="./images/red-pawn.png"  alt=""></div>
+                <div class=piece id="red-pawn4"><img src="./images/red-pawn.png"  alt=""></div>
+                <div class=piece id="red-pawn5"><img src="./images/red-pawn.png"  alt=""></div>
+
+        
+
+
+            </div>
+
+        
+        </div>
+
+        <div class="information">
+            <div style="display: flex;">
+                <h1 class="red-turn" >RED TURN</h1>
+                <h1 class="black-turn">BLACK TURN </h1>
+            </div>
+
+            
+
+            <div >
+                <h2 style="display: inline-block;">Red died: </h2>
+                <div class="red-died died-panel"></div>
+            </div>
+            <div >
+                <h2 style="display: inline-block;">Black died: </h2>
+                <div class="black-died died-panel"></div>
+            </div>
+            
+        </div>
+
+        
+        
+    </div>
+    <script src="control.js"></script>
+</body>
+</html>
